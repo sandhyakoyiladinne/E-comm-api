@@ -1,0 +1,10 @@
+.Navbarlinks ul{
+    bottom: 1px solid black;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(233, 240, 240);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}

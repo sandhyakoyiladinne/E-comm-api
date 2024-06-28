@@ -1,0 +1,36 @@
+.cardmain{
+    border:1px solid #d21fd8;
+    background-color: rgb(209, 206, 203);
+    /* margin-top: 22px; */
+    align-items: center;
+    display: grid;
+    place-items: center;
+    padding: 0px 20px;
+    padding-bottom: 20px;
+}
+.cardWrapper{
+    border:1px solid #cf65d3;
+    background-color: rgb(238, 222, 196);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding: 15px 0px; */
+}
+.mainCard{
+    border: 1px solid rgb(5, 97, 139);
+    background-color: white;
+    width: 280px;
+    height: 300px;
+    margin: 10px 10px;
+    font-size: 10px;
+    align-items: center;
+    display: grid;
+    place-items: center;
+    box-shadow: 2px 2px 4px rgb(70, 70, 218);
+    cursor: pointer;
+    padding: 0px 5px;
+}
+.mainCard:hover{
+    background-color: whitesmoke;
+}
