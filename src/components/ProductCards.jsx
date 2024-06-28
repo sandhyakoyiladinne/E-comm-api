@@ -6,7 +6,7 @@ import "../css/ProductCards.css"
 const ProductCards = () => {
   const [products, setProducts] = useState([]);
   const [searchText, setSearchText] = useState([])
-  const [filteredProducts, setFilteredProducts] = useState([])
+  const [filteredProducts, setFilteredProducts] = useState("")
 
   useEffect(() => {
     axios
@@ -21,16 +21,22 @@ const ProductCards = () => {
       });
   }, []);
 
+  useEffect(() => {
+    if (typeof searchText === "string" && searchText.trim() === "") {
+      setFilteredProducts(products); // Show all products when searchText is empty
+    }
+  }, [searchText, products]);
   const imageSize = { width: "150px", height: "150px" };
 
   const handlesearch = () => {
-    const filteredData = products.filter((product) => (
-      product.title.toLowerCase().includes(searchText.toLowerCase())
-    ))
-    setFilteredProducts(filteredData)
-    console.log("filteredData", filteredData)
-  };
-
+    if (typeof searchText === "string") {
+      const filteredData = products.filter((product) =>
+        product.title.toLowerCase().includes(searchText.toLowerCase())
+      );
+      setFilteredProducts(filteredData)
+      console.log("filteredData", filteredData)
+    }
+  }
   return (
     <>
       <input type="text"
@@ -49,7 +55,7 @@ const ProductCards = () => {
               <div key={index} className="mainCard">
                 <img src={product.image} alt="" style={imageSize} />
                 <h2>{product.title}</h2>
-                <h4>{product?.proce}</h4>
+                <h4>{product?.price}</h4>
                 <div>
                   <span>{product?.rating.rate}</span>
                 </div>
