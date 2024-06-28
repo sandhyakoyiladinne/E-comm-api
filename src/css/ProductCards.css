@@ -1,13 +1,12 @@
-.cardmain{
+/* .cardmain{
     border:1px solid #d21fd8;
     background-color: rgb(209, 206, 203);
-    /* margin-top: 22px; */
     align-items: center;
     display: grid;
     place-items: center;
     padding: 0px 20px;
     padding-bottom: 20px;
-}
+} */
 .cardWrapper{
     border:1px solid #cf65d3;
     background-color: rgb(238, 222, 196);

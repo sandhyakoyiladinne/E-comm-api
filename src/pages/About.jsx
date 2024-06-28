@@ -17,16 +17,26 @@ const About = () => {
         <h2>Our Team</h2>
         <div className="team-container">
           <div className="team-member">
-            <h3>John Doe</h3>
+            <h3>Vijaya</h3>
             <p>CEO</p>
-            <p>John leads our team with over 20 years of experience in the industry.</p>
+            <p>Vijaya leads our team with over 20 years of experience in the industry.</p>
           </div>
           <div className="team-member">
-            <h3>Jane Smith</h3>
-            <p>CTO</p>
-            <p>Jane is our technology guru, with a passion for innovation and excellence.</p>
+            <h3>Pavani</h3>
+            <p>MD</p>
+            <p>Pavani is our Managing Director over 20 years of experience in the industry.</p>
           </div>
-          {/* Add more team members as needed */}
+          <div className="team-member">
+            <h3>Keshava</h3>
+            <p>CTO</p>
+            <p>Keshava is our technology guru, with a passion for innovation and excellence.</p>
+          </div>
+          <div className="team-member">
+            <h3>Hari</h3>
+            <p>Market Excutive</p>
+            <p>Hari is our technology guru, with a passion for innovation and excellence.</p>
+          </div>
+          
         </div>
       </section>
       
