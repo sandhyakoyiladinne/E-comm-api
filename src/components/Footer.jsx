@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-top">
-        <p>For better experience, download the e-comm app now</p>
+        <p>For better experience, download the E-Comm app now</p>
         <div className="footer-apps">
           <a href="#">
             <img
